@@ -1,3 +1,4 @@
+
 package code;
 
 /**
@@ -96,3 +97,4 @@ public class MinimoComunMultiplo {
     return true;
   }
 }
+
