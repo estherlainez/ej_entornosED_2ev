@@ -1,5 +1,9 @@
 package code;
-
+/**
+ * En esta clase buscamos el minimo comun multiplo de unos numeros
+ * @author Esther
+ *
+ */
 
 public class MinimoComunMultiplo {
   public MinimoComunMultiplo() {}
@@ -30,7 +34,9 @@ public class MinimoComunMultiplo {
       d += max;
     }
   }
-
+/**
+ * @return valor booleano que nos detecta si hay algun cero o no
+ */
   private boolean algunoEsCero(int[] ints) {
     for (int d : ints) {
       if (d == 0) {
@@ -41,6 +47,7 @@ public class MinimoComunMultiplo {
     return false;
   }
 
+  
   private static int[] abs(int[] ints) {
     int[] abs = new int[ints.length];
 
@@ -51,7 +58,10 @@ public class MinimoComunMultiplo {
     return abs;
   }
   
-
+/**
+ * @return maximo
+ * metodo que nos devuelve el valor maximo
+ */
   private int max(int[] ints) {
     int max = ints[0];
 
@@ -62,7 +72,10 @@ public class MinimoComunMultiplo {
     return max;
   }
   
-
+/**
+ * @param nos verificara el valor d
+ * @return nos devuelve un valor booleano comprobando la variable d
+ */
   private boolean esMinimoComunMultiplo(int d, int[] ints) {
     for (int i = 0; i < ints.length; i += 1) {
       if (d % ints[i] != 0) {

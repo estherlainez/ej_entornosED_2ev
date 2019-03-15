@@ -1,6 +1,10 @@
 package code;
 import javax.swing.JOptionPane;
-
+/**
+ * Esta clase nos verificara si dos numeros son amigos o no
+ * @author Esther
+ *
+ */
 public class VerificaNumerosAmigos {
 
 	/*
@@ -23,7 +27,10 @@ public class VerificaNumerosAmigos {
             JOptionPane.showMessageDialog(null, x + " no es amigo de " + y);
         }        
     }
-    
+    /**
+     * @return nos devuelve un valor booleano una vez que nos verifica los numeros
+     * @param valores x e y
+     */
    public boolean comprobarSiAmigos(int x, int y) {
     	int i, z = 0;
     	
