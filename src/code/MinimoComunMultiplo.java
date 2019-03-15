@@ -1,6 +1,11 @@
 package code;
 
-
+/**
+ * 
+ * @author ESther
+ * La clase nos mostrara el minimo comun multiplo de los numeros que cojamos
+ *
+ */
 public class MinimoComunMultiplo {
   public MinimoComunMultiplo() {}
 
@@ -30,7 +35,11 @@ public class MinimoComunMultiplo {
       d += max;
     }
   }
-
+/**
+ * 
+ * @param ints
+ * @return nos devolvera true si alguno de los numeros es cero
+ */
   private boolean algunoEsCero(int[] ints) {
     for (int d : ints) {
       if (d == 0) {
@@ -40,6 +49,11 @@ public class MinimoComunMultiplo {
 
     return false;
   }
+  /**
+   * 
+   * @param ints
+   * @return
+   */
 
   private static int[] abs(int[] ints) {
     int[] abs = new int[ints.length];
@@ -51,7 +65,11 @@ public class MinimoComunMultiplo {
     return abs;
   }
   
-
+/**
+ * 
+ * @param ints
+ * @return nos devolvera el maximo valor
+ */
   private int max(int[] ints) {
     int max = ints[0];
 
@@ -62,7 +80,12 @@ public class MinimoComunMultiplo {
     return max;
   }
   
-
+/**
+ * 
+ * @param d
+ * @param ints
+ * @return nos devolvera true o false si d es minimo comun multiplo o no
+ */
   private boolean esMinimoComunMultiplo(int d, int[] ints) {
     for (int i = 0; i < ints.length; i += 1) {
       if (d % ints[i] != 0) {

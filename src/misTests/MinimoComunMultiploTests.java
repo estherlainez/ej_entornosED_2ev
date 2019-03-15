@@ -35,4 +35,6 @@ class MinimoComunMultiploTests {
 		int[]candidatos= {6,8};
 		assertEquals(resultado,0);
 	}
+	
+	
 }

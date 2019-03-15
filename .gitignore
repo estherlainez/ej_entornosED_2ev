@@ -1,8 +1,4 @@
 
-# Created by https://www.gitignore.io/api/eclipse,windows
-# Edit at https://www.gitignore.io/?templates=eclipse,windows
-
-### Eclipse ###
 
 .metadata
 bin/
@@ -15,6 +11,7 @@ local.properties
 .settings/
 .loadpath
 .recommenders
+.class
 
 # External tool builders
 .externalToolBuilders/
